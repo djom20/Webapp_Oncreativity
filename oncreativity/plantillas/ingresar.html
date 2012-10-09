@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block encabezado %}<title>Creativity | Iniciar Seccion</title>{% endblock %}
+{% block style_css %}{% endblock %}
+{% block titulo %}<h1>Iniciar Seccion</h1>{% endblock %}
+{% block contenido %}
+	<form action="" id="formulario" method="post">{% csrf_token %}
+		<table>{{formulario}}</table>
+		<p><input type="submit" value="Ingresar"></p>
+	</form>
+{% endblock %}
