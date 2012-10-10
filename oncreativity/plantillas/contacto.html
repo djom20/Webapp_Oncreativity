@@ -1,8 +1,15 @@
 {% extends 'base.html' %}
 {% block encabezado %}<title>Creativity | Contacto</title>{% endblock %}
+{% block titulo %} <h1>Contacto</h1> {% endblock %}
 {% block contenido %}
-	<form id='formulario' method='post' action=''>{% csrf_token %}
-		{{formulario.as_p}}
-		<p><input class="btn btn-primary" type='submit' value='Confirmar' /></p>
-	</form>
+  	<div class="container-fluid">
+        <div class="row-fluid offset4">
+            <div class="span3">
+				<form id='formulario' class="well" method='post' action=''>{% csrf_token %}
+					{{formulario.as_p}}
+					<p><input class="btn btn-primary" type='submit' value='Confirmar' /></p>
+				</form>
+	  		</div>
+        </div>
+    </div>
 {% endblock %}

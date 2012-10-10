@@ -1,14 +1,18 @@
 {% extends 'base.html' %}
 {% block encabezado %}<title>Creativity</title>{% endblock %}
-{% block style_css %}{% endblock %}
-{% block titulo %}{% endblock %}
 {% block contenido %}
-	<div id="usuarios">
-    	<h2>Usuarios</h2>
-    	<button>Entrar</button>
-    </div>
-    <div id="clientes">
-       	<h2>Clientes</h2>
-    	<button>Entrar</button>
+	<div class="container-fluid">
+    	<div class="row-fluid offset1">
+	        <div id="loginuser">
+	        	<div id="clientes" class="span4 well">
+	        	  <p>Hola clientes!!</p>
+	        	  <a class="btn btn-primary btn-large">Clientes</a>
+	        	</div>
+	        	<div id="usuarios" class="span4 well">
+	        	  <p>Hola usuarios!!</p>
+	        	  <a class="btn btn-primary btn-large">Usuarios</a>
+	        	</div>
+	        </div>
+      	</div>
     </div>
 {% endblock %}

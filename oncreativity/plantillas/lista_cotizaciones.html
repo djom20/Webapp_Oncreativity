@@ -1,42 +1,17 @@
 {% extends 'base.html' %}
 {% block encabezado %} <title>Creativity | Cotizaciones</title> {% endblock %}
-{% block style_css %}
-<style type="text/css">
-    	#content{ height: 31em; overflow-y: auto; }
-  		* { cursor: pointer !important; }
-  		.sub{ list-style-type: none; }
-  		body{ color: #FFF; background-color: rgb(29,29,29); padding-left: 25%; padding-right: 25%; overflow: none; }
-  		img { padding-top: 4%; width: 50%; }
-  		ul{ background-color: #FFF; border-radius: 15px; padding-bottom: 2%; color: #000; }
-  		#menu{ list-style-type: none; text-transform: uppercase; height: 1.3em; background-color: #2175bc; }
-  		#menu li { display: inline; }
-  		#menu li a{
-			background-color: #2175bc;  
-			color: #fff;  
-			float:left;  
-			font-family: Arial;  
-			font-size:11px;  
-			padding: 10px;  
-			text-decoration: none;  
-  		}
-  		#menu li a:hover{
-			background-color: #2586d7;  
-			margin-top:-2px;  
-			padding-bottom:12px;
-  		}
-  		a, a:hover, a:visited{ text-decoration: none; color: #000; }
-  		footer{ text-align: center; }
-  		#usuarios,#clientes{background-color: #FFF; border-radius: 15px; color: #000; float: left; margin-right:2%; margin-top: 10%; padding-bottom: 2%; text-align: center; width: 48%; }
-		#titulo{ margin-top: 10%; }
-		h1{ text-align: center; }
-    </style>
-{% endblock %}
 {% block titulo %} <h1>Cotizaciones</h1> {% endblock %}
 {% block contenido %}
 	{% for elemento in lista %}
-	<ul>
-	  <li><strong>Cotizacion: #{{elemento.ident}}</strong></li>
-	  <li class="sub">{{elemento.descripcion}}</li>
-	</ul>
+	<div class="container-fluid">
+     	<div class="row-fluid offset3">
+	        <div class="span4 well">
+	        	<ul class="sec">
+		            <li><strong>Cotizacion: #{{elemento.ident}}</strong></li>
+	  				<li class="sub">{{elemento.descripcion}}</li>
+	          	</ul>
+	        </div>
+      </div>
+    </div>
 	{% endfor %}
 {% endblock %}
