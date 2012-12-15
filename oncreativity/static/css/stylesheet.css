@@ -1,0 +1,27 @@
+#formulario{ margin-top: 20%; margin-bottom: -40%; }
+#logo img{ padding-top: 1%; width: 40%; } 
+#logo{ margin-bottom: 1%; text-align: center; } 
+* { cursor: pointer !important; }
+.dropdown-menu { background-color: #2175BC !important; } 
+.nav > li > a:hover { background-color: #2586d7; } 
+.nav-pills > li > a { padding-top: 7px; padding-bottom: 5px; margin-top: 0; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0; } 
+.navbar .nav .active > a, .navbar .nav .active > a:hover { background-color: #2586d7; } 
+.sec{ color: #000; overflow: auto; }
+.sub{ list-style-type: none; }
+a{ color: #FFF !important; } 
+body{ background-color: #333; overflow: none; padding-left: 25%; padding-right: 25%; }
+footer p{ color: #000; padding: 0.5%; } 
+footer{ background-color: #FFF; border-radius: 15px; margin-top: 8%; margin-bottom: 45%; text-align: center; }
+h1{ text-align: center; margin-bottom: 3%; }
+nav li a{ margin-top:-2px; padding-bottom:12px; } 
+nav{ background-color: #2175bc; border-radius: 15px; font-size: 0.85em; height: 2.5em; margin-bottom: 0 !important; padding-left: 2%; text-transform: uppercase; } 
+textarea{ height: 4em !important; }
+ul{ color: #FFF; }
+#loginuser{ margin-top: 10%; margin-bottom: 5.4%; }
+#espacio{ margin-top: 5%; }
+.navbar .nav > li > a { padding: 5px 10px 0px !important; } 
+.navbar .nav .active > a, .navbar .nav .active > a:hover { background-color: #2175BC !important; }
+#menu{ width: 100em; }
+#bienvenido{
+	text-align: justify;
+}

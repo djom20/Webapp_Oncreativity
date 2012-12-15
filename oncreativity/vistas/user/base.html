@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang='es'>
+  <head>
+    <meta charset='utf-8'>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="googlebot" content="index,follow"/>
+    <meta name="author" content="Ing. Jonathan Olier Miranda"/>
+    <link rel='stylesheet' href='{{STATIC_URL}}css/stylesheet.css'>
+    <link rel='stylesheet' href='{{STATIC_URL}}css/bootstrap.min.css'>
+    <link rel='stylesheet' href='{{STATIC_URL}}css/bootstrap-responsive.min.css'>
+    <link rel='shortcut icon' href='{{STATIC_URL}}ico/fav.ico'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    {% block style_css %}{% endblock %}
+    {% block encabezado %}{% endblock %}
+  </head>
+  <body class="container-fluid" data-spy="scroll">
+    <div class="row-fluid"><div class="span12">&nbsp;</div></div>
+    <div class="row show-grid">
+      <div class="span6 offset2">
+        <div class="navbar navbar-fixed-top">
+          <div class="navbar-inner">
+            <div class="container">
+              <nav>
+                <ul id="menu" class="nav nav-pills">
+                  <li class="active"><a href="/"><strong><i class="icon-home"></i> Inicio</strong></a></li>
+                  <ul class="nav pull-right">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cuenta <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="/session"><strong><i class="icon-user"></i> Iniciar Seccion</strong></a></li>
+                        <li><a href="/config"><strong><i class="icon-cog"></i> Configuraciones</strong></a></li>
+                        <li><a href="/ayuda"><strong><i class="icon-flag"></i> Ayuda</strong></a></li>
+                      </ul>
+                    </li>
+                  </ul>             
+                </ul>
+              </nav>
+              <div>
+                <div id="logo"><img src="{{STATIC_URL}}img/logo.png" alt=""></div>
+                {% block titulo %}{% endblock %}
+                <section class='content'>
+                  {% block contenido %}{% endblock %}                
+                </section>
+                <footer>
+                  <p>Todos los derechos reservados por <strong>AltiviaOt &copy;2012.</strong></p>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src='{{STATIC_URL}}js/jquery-1.7.2.min.js'></script>
+    <script src='{{STATIC_URL}}js/disable select text.js'></script>
+    <script src='{{STATIC_URL}}js/bootstrap.min.js'></script>
+  </body>
+</html>
