@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block encabezado %} <title>Creativity | Servicios</title> {% endblock %}
+{% block titulo %} <h1>Servicios</h1> {% endblock %}
+{% block contenido %}
+	<div id="espacio" class="container-fluid">
+		{% for elemento in lista %}
+	     	<div class="row-fluid offset3">
+		        <div class="span4 well">
+		        	<ul class="sec">
+			            <li><strong>Servicio: #{{elemento.ident}}</strong></li>
+			            <li class="sub">{{elemento.nombre}}</li>
+			            <li class="sub">{{elemento.descripcion}}</li>
+			            <li class="sub">$ {{elemento.total}}</li>
+		          	</ul>
+		        </div>
+	      </div>
+		{% endfor %}
+	</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block encabezado %} <title>Creativity | Cotizaciones</title> {% endblock %}
+{% block titulo %} <h1>Cotizaciones</h1> {% endblock %}
+{% block contenido %}
+	{% for elemento in lista %}
+	<div class="container-fluid">
+     	<div class="row-fluid offset3">
+	        <div class="span4 well">
+	        	<ul class="sec">
+		            <li><strong>Cotizacion: #{{elemento.ident}}</strong></li>
+	  				<li class="sub">{{elemento.descripcion}}</li>
+	          	</ul>
+	        </div>
+      </div>
+    </div>
+	{% endfor %}
+{% endblock %}

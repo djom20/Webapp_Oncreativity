@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block encabezado %} <title>Creativity | Personas</title> {% endblock %}
+{% block titulo %} <h1>Personas</h1> {% endblock %}
+{% block contenido %}
+	{% for elemento in lista %}
+	<div class="container-fluid">
+     	<div class="row-fluid offset3">
+	        <div class="span4 well">
+	        	<ul class="sec">
+		            <li><strong>{{elemento.usuario}}</strong></li>
+		            <li class="sub">{{elemento.cargo}}</li>
+					<li class="sub">{{elemento.correo}}</li>
+					<li class="sub">{{elemento.celular}}</li>
+					<li class="sub">{{elemento.direccion}}</li>
+					<li class="sub">{{elemento.ciudad}}-{{elemento.pais}}</li>
+	          	</ul>
+	        </div>
+      </div>
+    </div>
+	{% endfor %}
+{% endblock %}

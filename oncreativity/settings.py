@@ -118,7 +118,11 @@ ROOT_URLCONF = 'oncreativity.urls'
 WSGI_APPLICATION = 'oncreativity.wsgi.application'
 
 TEMPLATE_DIRS = (
+<<<<<<< HEAD
     os.path.join(RUTA_PROYECTO, 'vistas'),
+=======
+    os.path.join(RUTA_PROYECTO, 'plantillas'),
+>>>>>>> c220042d370442acee3872d5eada0102d398a880
 )
 
 INSTALLED_APPS = (
